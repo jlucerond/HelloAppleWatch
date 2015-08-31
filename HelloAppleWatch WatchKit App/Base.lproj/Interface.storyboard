@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <label width="136" alignment="center" verticalAlignment="center" text="Hello, World!" textAlignment="center" numberOfLines="0" id="goB-8s-SYd">
+                            <fontDescription key="font" type="system" pointSize="24"/>
+                        </label>
+                        <button width="1" alignment="left" title="Info" id="K31-cB-KQx">
+                            <connections>
+                                <segue destination="nAK-Jv-nxw" kind="push" identifier="myPushSegue" id="JCM-Pa-o9M"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="New Fortune" id="Ymm-0o-ZlF">
+                            <connections>
+                                <action selector="newFortunePressed" destination="AgC-eL-Hgc" id="bze-Tr-AE7"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="myLabel" destination="goB-8s-SYd" id="tYY-XP-sbH"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="286" y="744"/>
+        </scene>
+        <!--justEmojis-->
+        <scene sceneID="fVJ-r6-5dm">
+            <objects>
+                <controller identifier="justEmojis" id="1iB-V4-yjR" customClass="JustEmojisInterfaceController">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="Label" textAlignment="center" id="eAN-lA-9qu">
+                            <fontDescription key="font" type="system" pointSize="24"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="justEmojisLabel" destination="eAN-lA-9qu" id="vLc-eg-toR"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="589" y="928"/>
+        </scene>
+        <!--mySecondStoryboard-->
+        <scene sceneID="UW5-ON-p9G">
+            <objects>
+                <controller identifier="mySecondStoryboard" id="nAK-Jv-nxw">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" alpha="0.94999999999999996" text="Created by:  Joe Lucero" textAlignment="center" numberOfLines="0" id="res-NB-7SP"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="621" y="524"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="1" green="0.75942745069999995" blue="0.21104330690000001" alpha="1" colorSpace="calibratedRGB"/>
+</document>
